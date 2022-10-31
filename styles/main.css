@@ -1,3 +1,20 @@
 .hide{
     display: none;
 }
+
+.h1{
+    text-transform: uppercase;
+    color: brown;
+}
+
+
+.h2{
+    color: brown;
+}
+
+.button{
+    background-color: lightslategray;
+    border: 1px solid brown;
+    border-radius: 5px;
+    font-size: 15px;
+}
