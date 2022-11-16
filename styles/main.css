@@ -3,18 +3,100 @@
 }
 
 .h1{
+    display: none;
+}
+
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    font-family: 'Spectral SC', serif;
+}
+.img{
+    background-image: url('https://play-lh.googleusercontent.com/M9yoCabCMEQEEJnMo7-s6OOWCERMqyTmci2KpHcmbDVx9cK_yiFDZ9WUzrdxtPazfg=w2560-h1440-rw');
+    background-origin: content-box;
+    background-size: cover;
+    background-position: 50%;
+}
+.form{
+    padding: 20px 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.game{
+    color: grey;
+    font-size: 20px;
+}
+.title{
+    font-size: 30px;
     text-transform: uppercase;
     color: brown;
+    font-weight: 700;
+}
+.text-light{
+    font-weight: 300;
+}
+.text-bold{
+    font-weight: 600;
 }
 
-
-.h2{
-    color: brown;
+.select{
+    gap: 10px;
+    display: flex;
+    justify-content: flex-start;
 }
+.js-select{
 
+    font-family: 'Spectral SC', serif;
+    padding: 5px 10px;
+    width: 75%;
+    border-color: lightgray;
+}
 .button{
-    background-color: lightslategray;
+    font-family: 'Spectral SC', serif;
+    font-weight: 600;
+    color: white;
+    padding: 5px 20px;
+    background-color: brown;
     border: 1px solid brown;
     border-radius: 5px;
     font-size: 15px;
+}
+
+
+
+
+
+.score{
+    color: brown;
+    text-align: center;
+    font-weight: 600;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+.js-result{
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+    background-color: brown;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: 90%;
+}
+.js-round{
+    text-align: center;
 }

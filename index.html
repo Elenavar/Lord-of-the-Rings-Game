@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los anillos de poder</title>
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body class="body">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="body">
     <header class="header">
-        <h1 class="h1">los anillos de poder</h1>
+      <h1 class="h1">los anillos de poder</h1>
     </header>
-    <form class="form">
-        <select class="js-select">
+    <main class="main">
+      <div class="img"></div>
+      <form class="form">
+        <div class="intro">
+          <p class="game">juego</p>
+          <h2 class="title">los anillos de poder</h2>
+          <p class="text-light">
+            La Tierra Media está en guerra! En ella lucharán razas leales a
+            Sauron contra otras bondadosas que no quieren que el mal reine sobre
+            sus tierras.
+          </p>
+          <p class="text-bold">
+            Eres un jugador del ejército del bien, no olvides tu misión de ganar
+            la batallas
+          </p>
+        </div>
+        <div class="select">
+          <select class="js-select">
             <option value="1">Pelosos</option>
             <option value="2">Sureños buenos</option>
             <option value="3">Enanos</option>
             <option value="4">Númenóreanos</option>
             <option value="5">Elfos</option>
-        </select>
-        <p class="js-result">Comienza la batalla</p>
-        <h2 class="h2">Puntuaciones</h2>
-        <p class="js-gamer">Jugador:</p>
-        <p class="js-pc">Computadora:</p>
-        <button class="js-button button">Batalla</button>
-        <button class="js-restart-button button hide">Reiniciar el juego</button>
-    </form>
+          </select>
+          <button class="js-button button">Batalla</button>
+          <button class="js-restart-button button hide">
+            Reiniciar el juego
+          </button>
+        </div>
+        <p class="js-result">Comienza la batalla!</p>
+        <h2 class="score">Puntuaciones</h2>
+        <p class="js-round"></p>
+        <div class="scores">
+          <p class="js-gamer">Jugador: 0</p>
+          <p class="js-pc">Computadora: 0</p>
+        </div>
+        <p class="js-final-result"></p>
+      </form>
+    </main>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
