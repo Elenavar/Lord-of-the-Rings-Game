@@ -6,23 +6,60 @@
     display: none;
 }
 
+.body{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 .main{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 250px 1fr;
+    background-color: #46292b;
+    /* height: 100%; */
     font-family: 'Spectral SC', serif;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    padding: 20px;
+    border-radius: 20px;
+}
+@media all and (min-width: 678px){
+    .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 600px;
+}
+
 }
 .img{
-    background-image: url('https://play-lh.googleusercontent.com/M9yoCabCMEQEEJnMo7-s6OOWCERMqyTmci2KpHcmbDVx9cK_yiFDZ9WUzrdxtPazfg=w2560-h1440-rw');
+    background-image: url('./images/ring1.jpeg');
+
     background-origin: content-box;
     background-size: cover;
     background-position: 50%;
+    border-radius: 20px;
+}
+@media all and (min-width: 678px){
+    .img{
+        background-image: url('./images/rings.jpeg');
+        width: 250px;
+        height: 700px;
+    }
+}
+@media all and (min-width: 1000px){
+    .img{
+        width: 450px;
+    }
 }
 .form{
-    padding: 20px 40px 20px 20px;
+    padding: 20px 40px 20px 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .intro{
@@ -32,7 +69,7 @@
     align-items: flex-start;
 }
 .game{
-    color: grey;
+    color: #E8A577;
     font-size: 20px;
 }
 .title{
@@ -43,9 +80,12 @@
 }
 .text-light{
     font-weight: 300;
+    color: white;
 }
 .text-bold{
     font-weight: 600;
+    color: white;
+
 }
 
 .select{
@@ -56,7 +96,7 @@
 .js-select{
 
     font-family: 'Spectral SC', serif;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     width: 75%;
     border-color: lightgray;
 }
@@ -83,9 +123,13 @@
 
 .scores{
     display: flex;
-    justify-content: space-between;
-    margin: 10px 20px;
+    justify-content: center;
+    /* margin: 10px 20px; */
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
 }
 .js-result{
     opacity: 0.6;
@@ -93,10 +137,15 @@
     text-align: center;
     background-color: brown;
     height: fit-content;
-    padding: 5px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     width: 90%;
 }
 .js-round{
     text-align: center;
+    background-color: brown;
+    padding: 5px;
+    border-radius: 10px;
 }
+
+
